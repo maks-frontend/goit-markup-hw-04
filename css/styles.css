@@ -72,12 +72,29 @@ a {
     text-decoration: none;
     color: currentColor;
 }
+.link-mark {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    word-wrap: break-word
+}
+
+.link-mark:hover,
+:focus {
+    color: #404bbf;
+
+}
 .link-mark-studio {
+    display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+    font-weight: 500;
+    display: block;
     color: #404bbf;
 }
+
 .link-mark-studio::after {
+    width: 100%;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 2px;
     background-color: #404bbf;
@@ -85,24 +102,10 @@ a {
     bottom: -1px;
     left: 0;
     position: absolute;
-    content:'';
-    
-}
-.link-mark {
-    
-    padding: 24px 0;
-    color: #2E2F42;
-    display: block;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    word-wrap: break-word
-}
-.link-mark:hover, :focus{
-    color: #404bbf;
+    content: '';
 
 }
+
 ul {
     list-style-type: none;
 }
@@ -183,7 +186,7 @@ ul {
     letter-spacing: 0.04em;
     word-wrap: break-word; 
 }
-.button:hover, :focus {
+.button:hover, .button:focus {
     background-color: #404BBF;
 }
 .cards {
@@ -249,11 +252,7 @@ ul {
     height: 40px;
     width: 40px;
 }
-.link-icon:hover {
-    background-color: #404bbf;
-}
-
-.link-icon:focus {
+.link-icon:hover, .link-icon:focus {
     background-color: #404bbf;
 }
 .link-icon {
@@ -373,10 +372,8 @@ ul {
     letter-spacing: 0.03em;
 }
 .footer-box-logo {
-
     margin-right: 120px;
     align-items: baseline;
-    display: flex;
 }
 .f-logo {
     letter-spacing: 0.02em;
